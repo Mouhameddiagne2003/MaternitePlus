@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.sticky_header {
+    width:100%;
+    height:80px;
+    line-height: 80px;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:9999;
+    background-color: rgba(255, 165, 227, 0.5); /* Utilisation de RGBA pour la transparence */
+    backdrop-filter: blur(6px); /* Application de l'effet de flou */
+    -webkit-backdrop-filter: blur(6px); /* Support pour les anciens navigateurs */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .navigation {
+        width: 100%;
+        height:100%;
+        position:fixed;
+        top: 0;
+        left: 0;
+        z-index:100;
+        background: #00000084;
+        display:none;
+    }
+    .menu {
+        width:15rem;
+        height:100%;
+        position:fixed;
+        top:0;
+        right:0;
+        background:#fff;
+        z-index:200;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        line-height:30px;
+    }
+    .show_menu{
+        display:block;
+    }
+}
